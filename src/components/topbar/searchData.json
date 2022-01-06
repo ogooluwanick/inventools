@@ -1,0 +1,30 @@
+[
+    {
+      "link": "/",
+      "title": "Home"
+    },
+    {
+      "link": "/CustomerList",
+      "title": "Customers List/Table"
+    },
+    {
+      "link": "/ProductList",
+      "title": "Products List/Table"
+    },
+    {
+      "link": "/TransactionList",
+      "title": "Transactions List/Table"
+    },
+    {
+      "link": "/NewProduct",
+      "title": "Create New Product"
+    },
+    {
+      "link": "/NewCustomer",
+      "title": "Create New Product"
+    },
+    {
+      "link": "/NewTransaction",
+      "title": "Create New Transaction"
+    }
+  ]

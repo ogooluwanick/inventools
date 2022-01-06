@@ -1,0 +1,183 @@
+.productPage{
+    flex: 4;
+    padding: 20px;
+}
+
+.productTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productAddBtn{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2ea4e5;
+    cursor: pointer;
+    color: snow;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.productAddBtn:hover,.productAddBtn:active{
+    
+    background-image: linear-gradient(to right, #2533f5, #4e9eb6, #b13755);
+    background-size: 200%;
+    transition: .5s;
+
+
+}
+
+.productTop{
+    display: flex;
+}
+
+.productTopLeft,.productTopRight{
+    flex: 1;
+    border-radius: 10px;
+}
+
+.productTopRight{
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    
+     
+}
+
+.PImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 0;
+
+}
+
+.productInfoTop{
+    display: flex;
+    align-items: center;
+}
+
+.productName{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.productInfoBottom{
+    margin-top: 10px;
+    display: flex;
+    
+}
+
+.productInfoItem{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfoKey{
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.productInfoValue{
+    font-weight: 300;
+    font-size: 13px;
+
+}
+
+
+
+.productBottom{
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius: 10px;
+}
+
+
+.productForm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.productFormLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.productFormLeft>label{
+    margin-bottom: 10px;
+    color: grey;
+}
+
+
+.productFormLeft>input{
+    margin-bottom: 10px;
+    border: none;
+    color: grey;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+     
+}
+
+.productFormLeft>select{
+    margin-bottom: 10px;
+
+}
+
+.productFormRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.productImgUpload{
+    width: 400px;
+    height: 400px;
+    background-repeat: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+
+}
+
+.productUpload{
+    display: flex;
+    align-items: center;
+}
+
+.productUpload>label{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.productInfoBottomRowColumn {
+    width: 70px;
+    padding: 7px;
+}
+  
+.productInfoBottomRow{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .qtySelect{
+      margin-top: 0.2rem;
+      padding: .1rem;
+      border-radius: .5rem;
+      border: 0.1rem #a7d2df solid;
+      font-size: .8rem;cursor: pointer;
+      background-color: #f8f8f8;
+  }

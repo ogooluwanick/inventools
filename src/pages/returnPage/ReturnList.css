@@ -1,0 +1,141 @@
+.returnListPage{
+    flex: 4;
+}
+
+.returnlistInfo{
+    display: flex;
+    align-items: center;
+    color: #000;
+
+}
+
+.returnlistImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.returnListEditBtn{
+    border:none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: snow;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.returnListDeleteIcon{
+    cursor: pointer;
+    color: crimson;
+
+}
+
+.returnListEditBtn:active,.returnListEditBtn:hover{
+    background-image: linear-gradient(to right, #074929, #7ca792, #c5f5de);
+	background-size: 200%;
+    transition: .5s;
+
+}
+
+.returnListDeleteIcon:active,.returnListDeleteIcon:hover{
+    color: rgb(236, 152, 168);
+    transition: .5s;
+
+}
+
+
+
+
+
+
+.returnListHeaderControls{
+    width: 100%;
+    height: 50px;
+    background-color: #fbfbff;
+    position: static;
+    top: 0;
+    z-index: 9999;
+    padding: 5px;
+}
+
+.returnListHeaderWrap{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.returnListHeaderAddIcon{
+    position: relative;
+      cursor: pointer; 
+       margin-right: 8px;
+       color: snow; 
+}
+
+.returnListHeaderLeft{
+    font-weight: 600;
+    font-size: 32px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+.returnListHeaderAddBtn{
+    height: 35px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: #2ea4e5;
+    color: snow;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+.returnListHeaderAddBtn:hover,.returnListHeaderAddBtn:active{
+    
+    background-image: linear-gradient(to right, #2533f5, #4e9eb6, #b13755);
+    background-size: 200%;
+    transition: .5s;
+
+
+}
+
+.returnListHeaderAddIcon{
+    font-size: 16px !important;
+    margin-right: 5px;
+    
+}
+.returnListLinks:hover{
+    text-decoration: none;
+}
+
+.productlistStatusTextColor.Approved{
+    color: #3bb077;
+}
+
+.productlistStatusTextColor.Declined{
+    color: #d95087;
+}
+
+.productlistStatusTextColor.Rejected{
+    color: #d95087;
+}
+
+
+.productlistStatusTextColor.Pending{
+    color: #2a7ade;
+}

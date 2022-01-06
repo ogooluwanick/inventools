@@ -1,0 +1,127 @@
+.customerListPage{
+    flex: 4;
+}
+
+.customerlistInfo{
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+
+.customerlistImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.UserListEditBtn{
+    border:none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: snow;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.UserListDeleteIcon{
+    cursor: pointer;
+    color: crimson;
+
+}
+
+
+.UserListEditBtn:active,.UserListEditBtn:hover{
+    background-image: linear-gradient(to right, #074929, #7ca792, #c5f5de);
+	background-size: 200%;
+    transition: .5s;
+
+}
+
+.UserListDeleteIcon:active,.UserListDeleteIcon:hover{
+    color: rgb(236, 152, 168);
+    transition: .5s;
+
+}
+
+
+
+
+
+
+.customerListHeaderControls{
+    width: 100%;
+    height: 50px;
+    background-color: #fbfbff;
+    position: static;
+    top: 0;
+    z-index: 9999;
+    padding: 5px;
+}
+
+.customerListHeaderWrap{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.customerListHeaderAddIcon{
+    position: relative;
+      cursor: pointer; 
+       margin-right: 8px;
+       color: snow; 
+}
+
+.customerListHeaderLeft{
+    font-weight: 600;
+    font-size: 32px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+.customerListHeaderAddBtn{
+    height: 35px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: #2ea4e5;
+    color: snow;
+    margin-right: 10px;
+}
+
+.customerListHeaderAddBtn:hover,.customerListHeaderAddBtn:active{
+    
+    background-image: linear-gradient(to right, #2533f5, #4e9eb6, #b13755);
+    background-size: 200%;
+    transition: .5s;
+
+
+}
+
+.customerListHeaderAddIcon{
+    font-size: 16px !important;
+    margin-right: 5px;
+}
+
+.productlistStatusTextColor.Online{
+    color: #3bb077;
+}
+
+.productlistStatusTextColor.Offline{
+    color: #d95087;
+}

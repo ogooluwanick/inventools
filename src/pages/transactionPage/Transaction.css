@@ -1,0 +1,164 @@
+.transactionPage{
+    flex:4;
+    padding: 20px;
+}
+
+.transactionTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transactionAddBtn{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2ea4e5;
+    cursor: pointer;
+    color: snow;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.transactionContainer{
+    display: flex;
+    margin-top: 10px;
+}
+
+.transactionShow{
+    flex:1;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius :05px; 
+}
+
+.transactionUpdate{
+    flex: 2;   
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius :05px; 
+    margin-left: 20px;
+
+}
+
+.transactionShowTop{
+    display: flex;
+    align-items: center;
+}
+
+
+.transactionShowImg{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.transactionShowTopTitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionUsername{font-weight: 600;}
+
+.transactionUserTitle{font-weight: 300;}
+
+.transactionShowBottom{
+    margin-top: 10px;
+}
+
+.transactionShowTitle{
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+}
+
+.displayEachInfo{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #444;
+    font-size: 16px !important;
+}
+
+.transactionShowInfoTitle{
+    margin-left: 10px;
+}
+
+.transactionUpdateTitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.transactionUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.transactionUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.transactionUpdateItem>label{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.transactionUpdateInputs{
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.transactionUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.transactionUpdateImgUpload{
+    align-items: center;
+    display: flex;
+}
+
+.transactionUpdateBtn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ea4e5;
+    cursor: pointer;
+    color: snow;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#transactionImgUploadFile{
+    display: none;
+}
+
+.transactionUpdateNewImgUpload{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+

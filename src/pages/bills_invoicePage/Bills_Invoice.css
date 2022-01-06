@@ -1,0 +1,179 @@
+.vendorPage{
+    flex: 4;
+    padding: 20px;
+}
+
+.vendorTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vendorAddBtn{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #2ea4e5;
+    cursor: pointer;
+    color: snow;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.vendorAddBtn:hover,.vendorAddBtn:active{
+    
+    background-image: linear-gradient(to right, #2533f5, #4e9eb6, #b13755);
+    background-size: 200%;
+    transition: .5s;
+
+
+}
+
+.vendorTop{
+    display: flex;
+}
+
+.vendorTopLeft,.vendorTopRight{
+    flex: 1;
+    border-radius: 10px;
+}
+
+.vendorTopRight{
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    
+     
+}
+
+.PImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-bottom: 0;
+
+}
+
+.vendorInfoTop{
+    display: flex;
+    align-items: center;
+}
+
+.vendorName{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.vendorInfoBottom{
+    margin-top: 10px;
+    display: flex;
+    
+}
+
+.vendorInfoItem{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vendorInfoKey{
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    
+}
+
+.vendorInfoValue{
+    width: 100px;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 40px;
+    display: flex;
+}
+
+
+
+.vendorBottom{
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius: 10px;
+}
+
+
+.vendorForm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vendorFormLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.vendorFormLeft>label{
+    margin-bottom: 10px;
+    color: grey;
+}
+
+
+.vendorFormLeft>input{
+    width: 200px;
+    margin-bottom: 10px;
+    border: none;
+    color: grey;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+     
+}
+
+.vendorFormLeft>select{
+    margin-bottom: 10px;
+
+}
+
+.vendorFormRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.vendorImgUpload{
+    width: 400px;
+    height: 400px;
+    background-repeat: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+
+}
+
+.vendorUpload{
+    display: flex;
+    align-items: center;
+}
+
+.vendorUpload>label{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.vendorInfoBottomRowColumn {
+    width: 70px;
+    padding: 7px;
+    }
+  
+.vendorInfoBottomRow{
+    display: flex;
+    flex-direction: row;
+  }

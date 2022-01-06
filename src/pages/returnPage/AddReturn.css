@@ -1,0 +1,115 @@
+.AddReturn{
+    flex: 4;
+}
+
+.newReturnTitle{
+    margin-left: 20px;
+}
+
+
+.newReturnForm{
+    display: flex;
+    flex-direction: space-between;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius :05px; 
+    margin-left: 20px;
+    border-radius: 10px;  
+    padding: 20px;
+    margin: 20px;
+}
+.newReturnFormLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.returnItem{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.returnItemImg{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.returnItemImg>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(128, 125, 125);
+}
+
+.returnItemImg>input{
+    height: 20px;
+    padding: 10px;
+
+}
+
+.returnItem>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(128, 125, 125);
+}
+
+.returnItem>input{
+    height: 20px;
+    padding: 10px;
+    border: 1px solid rgb(128, 125, 125);
+    border-radius: 5px;
+}
+
+.newReturnGender>input{
+    margin-top: 15px;
+}
+
+
+.newReturnGender>label{
+margin: 10px;
+font-size: 18px;
+color: #555;
+}
+
+.newReturnSelect{
+    height: 40px;
+    border-radius: 5px;
+}
+
+.newReturnBtn{
+    width: 200px;
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    color: snow;
+    background-color: #2ea4e5;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    margin-left: 320px;
+    font-size: 16px;
+}
+
+.newReturnFormRight{
+    padding: 30px;
+    margin-left: 50px;
+
+}
+
+.addReturnImgUpload{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+

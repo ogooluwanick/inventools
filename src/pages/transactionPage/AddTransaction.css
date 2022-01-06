@@ -1,0 +1,115 @@
+.addTransactionPage{
+    flex: 4;
+}
+
+.newTransactionTitle{
+    margin-left: 20px;
+}
+
+
+.newTransactionForm{
+    display: flex;
+    flex-direction: space-between;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius :05px; 
+    margin-left: 20px;
+    border-radius: 10px;  
+    padding: 20px;
+    margin: 20px;
+}
+.newTransactionFormLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.transactionItem{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.transactionItemImg{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.transactionItemImg>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(128, 125, 125);
+}
+
+.transactionItemImg>input{
+    height: 20px;
+    padding: 10px;
+
+}
+
+.transactionItem>label{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(128, 125, 125);
+}
+
+.transactionItem>input{
+    height: 20px;
+    padding: 10px;
+    border: 1px solid rgb(128, 125, 125);
+    border-radius: 5px;
+}
+
+.newTransactionGender>input{
+    margin-top: 15px;
+}
+
+
+.newTransactionGender>label{
+margin: 10px;
+font-size: 18px;
+color: #555;
+}
+
+.newTransactionSelect{
+    height: 40px;
+    border-radius: 5px;
+}
+
+.newTransactionBtn{
+    width: 200px;
+    height: 40px;
+    font-weight: 600;
+    border: none;
+    color: snow;
+    background-color: #2ea4e5;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    margin-left: 320px;
+    font-size: 16px;
+}
+
+.newTransactionFormRight{
+    padding: 30px;
+    margin-left: 50px;
+
+}
+
+.addTransactionImgUpload{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+

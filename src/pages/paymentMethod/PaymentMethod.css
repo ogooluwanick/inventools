@@ -1,0 +1,21 @@
+.paymentForm{
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius :05px; 
+    margin-left: 20px;
+    border-radius: 10px;  
+    padding: 20px;
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.paymentMethodRadios{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.paymentMethodRadios>label{
+    margin-left: 5px;
+}
