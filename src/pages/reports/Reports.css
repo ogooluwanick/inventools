@@ -1,0 +1,67 @@
+.UserLogin{
+    margin-top: 3%;
+    flex:4
+}
+
+.reportSection{
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius :05px; 
+    margin-left: 20px;
+    border-radius: 10px;  
+    padding: 20px;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 3rem;
+
+
+}
+
+.reportHeader{
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.reportSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reportExports{
+    display: flex;
+    flex-direction: column;
+}
+
+.exportImportLinks { 
+    font-size: 18px;
+    text-decoration:none;
+    border-bottom: 1px solid #25c8e4;
+    box-shadow: inset 0 -4px 0 #25c8e4;
+    color: inherit;
+    transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+    margin-bottom: 5px;
+
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+}
+#exportImportLinksRight{
+    position: relative;
+    float: right;
+
+}
+  
+.exportImportLinks:hover {
+    background: #25c8e4;
+  }
+
+
+  .reportBtnStylSpace{
+      display: flex;
+      justify-content: space-between;
+  }

@@ -30,8 +30,8 @@ export default function ShippingAddress() {
     };
     
     return (
-        <div className='UserLogin'>
-           <CheckoutSteps step1 step2></CheckoutSteps>
+        <div className='UserLogin' id='shippingPage'>
+           <CheckoutSteps step1 step2 ></CheckoutSteps>
            <form action="form" className="shippingForm" onSubmit={submitShippingHandler}>
                <div>  
                    <h1>Shipping Address</h1>
@@ -82,7 +82,7 @@ export default function ShippingAddress() {
                           required />
                </div>
                <div>
-                   <button className='checkoutBtn'  type='submit' >Proceed</button>
+                   <button className='checkoutBtn' id='majorBtnHoverStyle' type='submit' >Proceed</button>
                </div>
            </form>
         </div>

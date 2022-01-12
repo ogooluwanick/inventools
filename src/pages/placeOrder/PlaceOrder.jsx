@@ -37,7 +37,6 @@ export default function PlaceOrder() {
 
     const placeOrderHandler=()=>{
         dispatch(createOrder({...cart, orderItems: cart.cartItems }))
-         nav(`/order/`)
     }
     
     useEffect(()=>{
@@ -135,10 +134,11 @@ export default function PlaceOrder() {
                                 </div>
                             </li>
                             <li>
-                                <button  type='submit' className='checkoutBtn' onClick={placeOrderHandler} disabled={cart.cartItems.length===0}>Place Order</button>
+                                <button  type='submit' className='checkoutBtn' id='majorBtnHoverStyle' onClick={placeOrderHandler} disabled={cart.cartItems.length===0}>Place Order</button>
                             </li>
-                            {loading && <LoadingBox></LoadingBox>}
-                            {error && <MessageBox variant='danger'>{error}</MessageBox>}
+                            
+                            {loading && <div><br /><LoadingBox></LoadingBox></div> }
+                            {error   &&   <div><br /><MessageBox variant='danger'>{error}</MessageBox></div> }
                         </ul>
                     </div>
                 </div>

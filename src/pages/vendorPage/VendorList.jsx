@@ -42,7 +42,7 @@ export default function VendorList() {
           renderCell:(param)=>{
               return(
                   <div className="vendorlistInfo">
-                      <Link to={"/Vendor/"+param.row.id}  className="vendorlistInfo">
+                      <Link to={"/Vendor/"+param.row._id}  className="vendorlistInfo">
                         <img src={param.row.company_AVATER} alt="vendor Img" className="vendorlistImg" />
                         {param.row.company_NAME}
                       </Link>
@@ -98,10 +98,10 @@ export default function VendorList() {
           renderCell:(param)=>{
               return(
                 <>
-                    <Link to={"/Vendor/"+param.row.id}>
+                    <Link to={"/Vendor/"+param.row._id}>
                         <button className="vendorListEditBtn">Edit</button>
                     </Link>
-                    <DeleteRounded className="vendorListDeleteIcon" onClick={()=>handleDelete(param.row.id)}/>
+                    <DeleteRounded className="vendorListDeleteIcon" onClick={()=>handleDelete(param.row._id)}/>
                 </>
               );
           }

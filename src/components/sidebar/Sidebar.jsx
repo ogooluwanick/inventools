@@ -1,6 +1,6 @@
 import React from "react"
 import "./Sidebar.css"
-import { Home,Face,ErrorOutline,  StoreSharp,Receipt,MarkunreadMailbox, MailOutlineSharp,ChatBubbleOutlineSharp,Timeline, PieChart, Payment, StoreOutlined,WorkOutline,Storefront} from '@material-ui/icons';
+import { Home,Face,ErrorOutline,  StoreSharp,Receipt,MarkunreadMailbox, MailOutlineSharp,Timeline, PieChart, Payment, StoreOutlined,WorkOutline,Storefront,ShowChart} from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 
@@ -10,6 +10,10 @@ import { useLocation } from "react-router-dom";
 export default function Sidebar() {
     let location = useLocation();
     let sideBar;
+
+  
+
+
     if (location.pathname==="/signin" || location.pathname==="/register" || location.pathname==="/checkout" || location.pathname.includes("signIn")||location.pathname.includes("payment")||location.pathname.includes("shipping")||location.pathname.includes("place_order"))
     {
         sideBar=<div className='sideBar' hidden></div>
@@ -96,15 +100,15 @@ export default function Sidebar() {
                     <div className="sideBarMenu">
                         <h3 className="sideBarTitle">Notifications</h3>
                         <ul className="sidebarList">
-                            <Link to='/ReturnsList' className="linkDecor" >
+                            <Link to='/ReturnsList' className="linkDecor" hidden>
                                 <li className="sidebarListItem"  >
                                     <MailOutlineSharp className="sideBarIcons"/>   Mail
                                 </li>
                             </Link>
 
-                            <Link to='/ReturnsList' className="linkDecor" >
+                            <Link to='/stock' className="linkDecor" >
                                 <li className="sidebarListItem">
-                                    <ChatBubbleOutlineSharp className="sideBarIcons" />  Chats
+                                    <ShowChart className="sideBarIcons" />  Stocks
                                 </li>
                             </Link>
 
@@ -120,13 +124,13 @@ export default function Sidebar() {
                                 </li>
                             </Link>
 
-                            <Link to='/ReturnsList' className="linkDecor" >
+                            <Link to='/ReturnsList' className="linkDecor" hidden >
                                 <li className="sidebarListItem"  >
                                     <Home className="sideBarIcons"/> Integrations
                                 </li>
                             </Link>
 
-                            <Link to='/ReturnsList' className="linkDecor" >
+                            <Link to='/Reports' className="linkDecor" >
                                 <li className="sidebarListItem">
                                     <ErrorOutline className="sideBarIcons" />  Reports
                                 </li>

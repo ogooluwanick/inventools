@@ -8,14 +8,14 @@
     text-align: center;
 }
 
-.alert-info{
+.alert-success{
     color:snow;
     background-color:#8dc3e1 ;
 }
 
 .alert-danger{
     color: snow;
-    background-color: #d33c3c;
+    background-color: #fc8989;
 
 }
 

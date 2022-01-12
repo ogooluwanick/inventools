@@ -16,9 +16,11 @@ export const UserLogin = () => {
 
 
 
+
     const redirect=location.search
                     ?location.search.split('=')[1]
                     :"/";
+
 
     const userSignin=useSelector((state)=> state.userSignin);
     const {userInfo,error,loading }= userSignin;
@@ -54,7 +56,7 @@ export const UserLogin = () => {
                 </div>
                 <div>
                     <label htmlFor=""/>
-                    <button className="checkoutBtn"> <div style={{fontSize: '15px',padding:"5px"}}>LogIn</div>   </button>
+                    <button className="checkoutBtn" id='majorBtnHoverStyle'> <div style={{fontSize: '15px',padding:"5px"}}>LogIn</div>   </button>
                 </div>
                 <div>
                     <label htmlFor=""></label>

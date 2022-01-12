@@ -40,12 +40,18 @@ import PaymentMethod from './pages/paymentMethod/PaymentMethod';
 import ErrorPage from "./pages/errorPage/ErrorPage"
 import PlaceOrder from './pages/placeOrder/PlaceOrder';
 import TrackOrder from './pages/trackOrder/TrackOrder';
+import UserProfile from './pages/profile/UserProfile';
+import { useSelector } from 'react-redux';
+import Reports from './pages/reports/Reports';
+import Stock from './pages/stock/Stock';
 
 
 
 
 
 function App() {
+  const userSignin = useSelector((state)=>state.userSignin);
+  const {userInfo} = userSignin;
   return (
     <Router className="App">
       <Topbar/>     
@@ -82,25 +88,34 @@ function App() {
 
 
           <Route path="/signin"  element={<UserLogin/>}/>
-          <Route path="/register"  element={<UserRegister/>}/>
+          
+          <Route path="/register/shipping_address"  element={<ShippingAddress/>}/>
           <Route path="/shipping_address"  element={<ShippingAddress/>}/>
+          <Route path="/signin/shipping_address"  element={<ShippingAddress/>}/>
           <Route path="/payment"  element={<PaymentMethod/>}/>
           <Route path="/place_order"  element={<PlaceOrder/>}/>
           <Route path="/order/:id"  element={<TrackOrder/>}/>
           
-
+          
+          <Route path='/Reports' element={<Reports/>}/>
+          <Route path='/Stock' element={<Stock/>}/>  
+          <Route path='/Stock/:StockID' element={<Stock/>}/>        
+          
+          {
+            userInfo &&
+            (<Route path="/profile"  element={<UserProfile/>}/>)
+            
+          }
+          {
+            !userInfo &&
+            (<Route path="/register"  element={<UserRegister/>}/>)
+            
+          }
 
 
           <Route path='/cart/:ProductId' element={<Cart/>}/>
           <Route path='/cart' element={<Cart/>}/>
-
-
-
           
-
-
-
-
 
 
           <Route path="*"  element={<ErrorPage/>}/>

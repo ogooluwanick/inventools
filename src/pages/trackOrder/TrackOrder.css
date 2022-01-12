@@ -1,36 +1,45 @@
-.UserLogin{
-    margin-top: 3%;
+.trackOrderPage{
+    margin-top: 2%;
     flex:4;
     margin-bottom: 20px;
     padding-top: 0;
     margin-top: -5px;
 }
-#placeOrderItems{
+#trackOrderItems{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.placeOrderRowCard{
+.trackOrderCol2{
+    margin-left: -100px;
+}
+
+.trackOrderRowCard{
     -webkit-box-shadow: 0px 0px 8px -1px #000000; 
     box-shadow: 0px 0px 8px -1px #000000; 
-    margin-left: 20px;
     border-radius: 10px;  
     padding: 20px;
-    max-width: 70rem;
+    max-width: 50rem;
     margin: 0 auto;
 }
-.placeOrderBox{
+.trackOrderBoxCase{
+    margin-top: 50px;
+    margin-left: -50px;
+    margin-right: 20px;
+
+}
+.trackOrderBox{
     -webkit-box-shadow: 0px 0px 8px -1px #000000; 
     box-shadow: 0px 0px 8px -1px #000000;
-    border-radius :05px; 
     border-radius: 10px;  
-    padding: 20px;
+    padding: 15px;
     margin-top: 20px;
     width: 330px;
-    margin-right: 30px;
+    height: auto;
+    
 }
-.placeOrderseperator{
+.trackOrderseperator{
     margin: 10px;
     padding: 10px;
     width: 60rem;
@@ -41,7 +50,24 @@ p{
 }
 
 
-#placeOrderBoxFlat{
+#trackOrderBoxFlat{
     display: flex;
     justify-content: space-between;
+    margin: 8px 0px;
+    
+}
+.trackingtitle{
+    padding: 10px 0px;
+    margin-left: 60px;
+}
+
+.trackingID{
+    font-weight: 500;
+}
+
+.trackingMessagebox{
+    padding: 10px;
+    width: 30rem;
+    margin:0 auto;
+
 }

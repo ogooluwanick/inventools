@@ -49,7 +49,7 @@ export default function PaymentMethod() {
                         <label htmlFor="stripe">Stripe</label>
                     </div>
                 </div>
-                <button className='checkoutBtn'  type='submit' >Proceed</button>
+                <button className='checkoutBtn' id='majorBtnHoverStyle' type='submit' >Proceed</button>
 
 
              </form>

@@ -1,11 +1,9 @@
-
-
 .UserLogin{
     margin-top: 3%;
     flex:4
 }
 
-.registerForm{
+.profileForm{
     -webkit-box-shadow: 0px 0px 8px -1px #000000; 
     box-shadow: 0px 0px 8px -1px #000000;
     border-radius :05px; 
@@ -13,13 +11,16 @@
     border-radius: 10px;  
     padding: 20px;
     max-width: 50rem;
-    margin: 10px auto;
-
+    margin: 0 auto;
 
 
 }
 
-.registerForm>div{
+#UserLogin{
+    margin-top: 50px;
+}
+
+.profileForm>div{
     display: flex;
     flex-direction:column;
     margin: 1rem;
@@ -27,7 +28,7 @@
 }
 
 
-.loginForm  label{
+.profileForm  label{
     margin: 1rem 0;
     display: block;
 }

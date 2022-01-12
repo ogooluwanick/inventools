@@ -42,7 +42,7 @@ export default function ReturnList() {
           renderCell:(param)=>{
               return(
                   <div className="returnlistInfo">
-                      <Link to={"/Return/"+param.row.id}  className="returnlistInfo">
+                      <Link to={"/Return/"+param.row._id}  className="returnlistInfo">
                         {param.row.customer_NAME}
                       </Link>
                   </div>
@@ -124,10 +124,10 @@ export default function ReturnList() {
           renderCell:(param)=>{
               return(
                 <>
-                    <Link to={"/Return/"+param.row.id}>
+                    <Link to={"/Return/"+param.row._id}>
                         <button className="returnListEditBtn">Edit</button>
                     </Link>
-                    <DeleteRounded className="returnListDeleteIcon" onClick={()=>handleDelete(param.row.id)}/>
+                    <DeleteRounded className="returnListDeleteIcon" onClick={()=>handleDelete(param.row._id)}/>
                 </>
               );
           }

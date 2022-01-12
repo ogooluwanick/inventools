@@ -7,7 +7,7 @@ import {  productDetailsReducer, productListReducer } from "./reducers/productRe
 import {transactionDetailsReducer, transactionListReducer} from "./reducers/transactionReducers"
 import { returnDetailsReducer, returnListReducer } from "./reducers/returnReducers";
 import { cartReducer } from "./reducers/cartReducers";
-import { userRegisterReducer, userSigninReducer } from "./reducers/userReducers";
+import { userDetailsReducer, userRegisterReducer, userSigninReducer } from "./reducers/userReducers";
 import { orderCreatedReducer, orderDetailsReducer } from "./reducers/orderReducers";
 
 
@@ -43,8 +43,10 @@ const reducer= combineReducers({
     cart :cartReducer,
     userSignin: userSigninReducer,
     userRegister:userRegisterReducer,
+    userDetails:userDetailsReducer,
     orderCreate:orderCreatedReducer,
     orderDetails:orderDetailsReducer
+
 
 
 

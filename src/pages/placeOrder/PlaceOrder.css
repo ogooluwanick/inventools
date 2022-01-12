@@ -45,3 +45,10 @@ p{
     display: flex;
     justify-content: space-between;
 }
+
+
+#majorBtnHoverStyle:hover{
+    box-shadow: 8px 8px 0px #66b4e9;
+    top: -5px;
+    left: -5px;
+}

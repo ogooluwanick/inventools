@@ -36,7 +36,7 @@ export default function Cart() {
     };
 
     const checkOutHandler=()=>{
-        nav("/signin?redirect=shipping")
+        nav("/signin?redirect=shipping_address")
     }
 
     return (
@@ -89,7 +89,7 @@ export default function Cart() {
                 </div>
                 <div className="cartCheckoutBox">
                     <div>Subtotal ({cartItems.reduce((a,c)=> a+c.qty,0)}  items) : {cartItems.reduce((a,c)=> a + c.price * c.qty, 0)}TL</div>
-                    <button className='checkoutBtn' onClick={checkOutHandler}  disabled={cartItems.length === 0}>Checkout</button>
+                    <button className='checkoutBtn' id='majorBtnHoverStyle'  onClick={checkOutHandler}  disabled={cartItems.length === 0}>Checkout</button>
                 </div>
             </div>
             <br />

@@ -37,7 +37,7 @@ export default function WidgetSmall() {
                 <div className="widgetSl">
                 <span className="widgSmTitle">New Customers</span>
                 <ul className="widgSmList">
-                        {customers.slice(0, 5).map((customers)=>(
+                        {customers.slice(Math.max(customers.length - 5, 0)).reverse().map((customers)=>(
                             <il className="widgSmListItems">
                                 <Link to={"/Customer/"+customers._id}>
                                     <img src={customers.AVATER} alt="userImg" className="widgSmItemsImg" />

@@ -52,7 +52,7 @@ export default function WidgetLarge() {
                                 <th className="WidgetLgTh">Status</th>
                             </tr>
                             
-                            {transactions.slice(0, 5).map((transactions)=>(
+                            {transactions.slice(Math.max(transactions.length - 5, 0)).reverse().map((transactions)=>(
                                 <tr className="WidgetLgTr">
                                     <td className="WidgetLgUser">
                                         <Link to={"/Transaction/"+transactions._id}>
