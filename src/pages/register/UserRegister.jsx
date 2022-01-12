@@ -22,7 +22,7 @@ export const UserRegister = () => {
 
     const redirect=location.search
                     ?location.search.split('=')[1]
-                    :"/";
+                    :"/home";
 
     const userRegister=useSelector((state)=> state.userRegister);
     const {userInfo,error,loading }= userRegister;

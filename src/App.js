@@ -64,6 +64,8 @@ function App() {
           <Route path="/Vendor/:VendorId"  element={<Vendor/>}/>
         
           <Route path="/signin"  element={<UserLogin/>}/>
+          <Route path="/"  element={<UserLogin/>}/>
+
           
           <Route path="/register/shipping_address"  element={<ShippingAddress/>}/>
           <Route path="/shipping_address"  element={<ShippingAddress/>}/>
@@ -76,7 +78,7 @@ function App() {
             userInfo &&
             (
               <>
-                <Route path="/" element={<Home/>} exact />
+                <Route path="/home" element={<Home/>} exact />
                 <Route path="/profile"  element={<UserProfile/>}/>
 
                 <Route path="/CustomerList"  element={<CustomerList/>}/>

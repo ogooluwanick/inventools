@@ -19,7 +19,7 @@ export const UserLogin = () => {
 
     const redirect=location.search
                     ?location.search.split('=')[1]
-                    :"/";
+                    :"/home";
 
 
     const userSignin=useSelector((state)=> state.userSignin);

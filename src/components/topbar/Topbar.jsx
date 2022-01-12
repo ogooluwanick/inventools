@@ -27,10 +27,25 @@ export default function Topbar() {
             <div className="topbarWrap">
 
             <div className="topLeft">
-                <Link to="/" className='brand_logo'>
-                        <img src="tool_logo.png" alt="Logo" width="30" height="30" className="imgspin"  ></img>
-                        InvenTools
-                </Link>
+                {
+                    userInfo?
+                    (
+                        <>
+                            <Link to="/home" className='brand_logo'>
+                                    <img src="tool_logo.png" alt="Logo" width="30" height="30" className="imgspin"  ></img>
+                                    InvenTools
+                            </Link>
+                        </>
+                    ):
+                    (
+                        <>
+                            <Link to="/" className='brand_logo'>
+                                    <img src="tool_logo.png" alt="Logo" width="30" height="30" className="imgspin"  ></img>
+                                    InvenTools
+                            </Link>
+                        </>
+                    )
+                }   
 
             
             </div>
@@ -88,7 +103,7 @@ export default function Topbar() {
                                 <ul className="dropDownContent">
                                     <li ><Link to="/profile" className='topbarLink'>{userInfo.username}</Link></li>
                                     <li><Link to="/" className='topbarLink'>Order History</Link></li>
-                                    <li><Link to="#signout"  className='topbarLink' onClick={signOutHandler}>Sign Out</Link></li>
+                                    <li><Link to="/"  className='topbarLink' onClick={signOutHandler}>Sign Out</Link></li>
                                 </ul>
                             </div>
                             </>
@@ -111,7 +126,7 @@ export default function Topbar() {
                                     <li ><Link to="/dashboard" className='topbarLink'>Dashboard</Link></li>
                                     <li><Link to="/productlist" className='topbarLink'>Products</Link></li>
                                     <li><Link to="/orderlist" className='topbarLink'>Orders</Link></li>
-                                    <li><Link to="/userlist"  className='topbarLink' onClick={signOutHandler}>Sign Out</Link></li>
+                                    <li><Link to="/"  className='topbarLink' onClick={signOutHandler}>Sign Out</Link></li>
                                 </ul>
                             </div>
                         )

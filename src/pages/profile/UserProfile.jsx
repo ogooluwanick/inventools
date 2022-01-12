@@ -23,7 +23,7 @@ export const UserProfile = () => {
     
     const redirect=location.search
                     ?location.search.split('=')[1]
-                    :"/";
+                    :"/home";
    
     const submithandler=(e)=>{
         e.preventDefault()

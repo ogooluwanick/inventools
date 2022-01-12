@@ -17,7 +17,7 @@ export default function Sidebar() {
   
 
 
-    if (location.pathname==="/signin" || location.pathname==="/register" || location.pathname==="/checkout" || location.pathname.includes("signIn")||location.pathname.includes("payment")||location.pathname.includes("shipping")||location.pathname.includes("place_order"))
+    if (location.pathname==="/" ||location.pathname==="/signin" || location.pathname==="/register" || location.pathname==="/checkout" || location.pathname.includes("signIn")||location.pathname.includes("payment")||location.pathname.includes("shipping")||location.pathname.includes("place_order"))
     {
         sideBar=<div className='sideBar' hidden></div>
     }
