@@ -25,7 +25,7 @@ export default function Topbar() {
 
             <div className="topLeft">
                 <Link to="/" className='brand_logo'>
-                        <img src="tool_logo.png" alt="tools_logo" width="30" height="30" className="imgspin"  ></img>
+                        <img src="tool_logo.png" alt="Logo" width="30" height="30" className="imgspin"  ></img>
                         InvenTools
                 </Link>
 

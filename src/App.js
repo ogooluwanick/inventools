@@ -25,9 +25,6 @@ import ReturnList from './pages/returnPage/ReturnList';
 import AddReturn from './pages/returnPage/AddReturn';
 import Return from './pages/returnPage/Return';
 
-import BillsInvoiceList from './pages/bills_invoicePage/BillsInvoiceList';
-
-
 import Cart from './pages/cartPage/Cart';
 
 
@@ -59,57 +56,64 @@ function App() {
         <Sidebar className="globalSidebar"/>
         
         <Routes>
-          <Route path="/" element={<Home/>} exact />
-          
-          <Route path="/CustomerList"  element={<CustomerList/>}/>
-          <Route path="/Customer/:CustomerId"  element={<Customer/>} />
-          <Route path="/NewCustomer"  element={<AddCustomer/>}/>
-
+         
           <Route path="/ProductList"  element={<ProductList  />}/> 
           <Route path="/Product/:ProductId"  element={<Product/>}/>
-          <Route path="/NewProduct"  element={<AddProduct/>}/>
-
-          <Route path="/TransactionList"  element={<TransactionList/>}/> 
-          <Route path="/Transaction/:TransactionId"  element={<Transaction/>}/>
-          <Route path="/NewTransaction"  element={<AddTransaction/>}/>
-
+         
           <Route path="/VendorList"  element={<VendorList/>}/> 
           <Route path="/Vendor/:VendorId"  element={<Vendor/>}/>
-          <Route path="/NewVendor"  element={<AddVendor/>}/>
-          
-
-          <Route path="/ReturnList"  element={<ReturnList/>}/> 
-          <Route path="/Return/:ReturnId"  element={<Return/>}/>
-          <Route path="/NewReturn"  element={<AddReturn/>}/>
-
-          <Route path="/Bills_InvoiceList"  element={<BillsInvoiceList/>}/> 
-          <Route path="/Return/:ReturnId"  element={<Return/>}/>
-          <Route path="/NewReturn"  element={<AddReturn/>}/>
-
-
+        
           <Route path="/signin"  element={<UserLogin/>}/>
           
           <Route path="/register/shipping_address"  element={<ShippingAddress/>}/>
           <Route path="/shipping_address"  element={<ShippingAddress/>}/>
           <Route path="/signin/shipping_address"  element={<ShippingAddress/>}/>
-          <Route path="/payment"  element={<PaymentMethod/>}/>
-          <Route path="/place_order"  element={<PlaceOrder/>}/>
-          <Route path="/order/:id"  element={<TrackOrder/>}/>
           
-          
-          <Route path='/Reports' element={<Reports/>}/>
           <Route path='/Stock' element={<Stock/>}/>  
           <Route path='/Stock/:StockID' element={<Stock/>}/>        
           
           {
             userInfo &&
-            (<Route path="/profile"  element={<UserProfile/>}/>)
+            (
+              <>
+                <Route path="/" element={<Home/>} exact />
+                <Route path="/profile"  element={<UserProfile/>}/>
+
+                <Route path="/CustomerList"  element={<CustomerList/>}/>
+                <Route path="/Customer/:CustomerId"  element={<Customer/>} />
+                <Route path="/NewCustomer"  element={<AddCustomer/>}/>
+
+                <Route path="/TransactionList"  element={<TransactionList/>}/> 
+                <Route path="/Transaction/:TransactionId"  element={<Transaction/>}/>
+                <Route path="/NewTransaction"  element={<AddTransaction/>}/>
+
+                <Route path="/payment"  element={<PaymentMethod/>}/>
+                <Route path="/place_order"  element={<PlaceOrder/>}/>
+                <Route path="/order/:id"  element={<TrackOrder/>}/>
+
+                <Route path="/NewVendor"  element={<AddVendor/>}/>
+
+
+                <Route path="/ReturnList"  element={<ReturnList/>}/> 
+                <Route path="/Return/:ReturnId"  element={<Return/>}/>
+                <Route path="/NewReturn"  element={<AddReturn/>}/>
+
+                <Route path="/NewProduct"  element={<AddProduct/>}/>
+
+                
+                <Route path='/Reports' element={<Reports/>}/>
+              </>
+            )
+
             
           }
           {
             !userInfo &&
-            (<Route path="/register"  element={<UserRegister/>}/>)
-            
+            (
+              <>
+                <Route path="/register"  element={<UserRegister/>}/>
+              </>
+            )
           }
 
 

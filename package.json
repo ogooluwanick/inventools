@@ -1,6 +1,7 @@
 {
   "name": "webpro2",
   "proxy": "https://inventools.herokuapp.com",
+  "homepage": "/signin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
