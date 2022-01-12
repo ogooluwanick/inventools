@@ -19,6 +19,9 @@ export default function Topbar() {
     }
 
 
+    
+
+
     return (
         <div className="topbar">{/*Header*/}
             <div className="topbarWrap">
@@ -32,9 +35,16 @@ export default function Topbar() {
             
             </div>
 
-            <div className='searchBar' >
-                <Searchbar placeholder="Search..." data={siteData}> </Searchbar>
-            </div>
+            {
+                userInfo &&
+                (
+                    <>
+                        <div className='searchBar'>
+                            <Searchbar placeholder="Search..." data={siteData}> </Searchbar>
+                        </div>
+                    </>
+                )
+            }
 
 
 
