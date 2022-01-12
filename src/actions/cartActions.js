@@ -2,7 +2,7 @@ import { CART_ADD_ITEM ,CART_REMOVE_ITEM, CART_SAVE_PAYMENT_METHOD, CART_SAVE_SH
 import  Axios  from "axios";
 
 export const addToCart =(ProductId, qty) => async(dispatch, getState)=>{
-    const {data}= await Axios.get (`/api/products/${ProductId}`);
+    const {data}= await Axios.get (`https://inventools.herokuapp.com/api/products/${ProductId}`);
     dispatch({
         type: CART_ADD_ITEM,
         payload:{

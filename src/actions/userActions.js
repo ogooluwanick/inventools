@@ -4,7 +4,7 @@ import { USER_DETAILS_FAIL, USER_DETAILS_REQUEST, USER_DETAILS_SUCCESS, USER_REG
 export const siginin=(email,passWord)=> async(dispatch)=>{
     dispatch ({type:USER_SIGNIN_REQUEST, payload:{email,passWord}})
     try {
-        const {data}= await Axios.post("/api/users/signin",{email,passWord})
+        const {data}= await Axios.post("https://inventools.herokuapp.com/api/users/signin",{email,passWord})
         dispatch({type:USER_SIGNIN_SUCCESS, payload: data})
         localStorage.setItem("userInfo",JSON.stringify(data))
     }
@@ -20,7 +20,7 @@ export const siginin=(email,passWord)=> async(dispatch)=>{
 export const register=(name,email,passWord,username)=> async(dispatch)=>{
     dispatch ({type:USER_REGISTER_REQUEST, payload:{name,email,passWord,username}})
     try {
-        const {data}= await Axios.post("/api/users/register",{name,email,passWord,username})
+        const {data}= await Axios.post("https://inventools.herokuapp.com/api/users/register",{name,email,passWord,username})
         dispatch({type:USER_REGISTER_SUCCESS, payload: data})
         dispatch({type:USER_SIGNIN_SUCCESS, payload: data})
 
@@ -47,7 +47,7 @@ export const detailsUser=(userId)=>async(dispatch,getState)=>{
     dispatch ({type:USER_DETAILS_REQUEST, payload:userId})
     const {userSignin:{userInfo}}=getState();
     try{
-        const {data}= await Axios.get(`/api/users/${userId}`,{
+        const {data}= await Axios.get(`https://inventools.herokuapp.com/api/users/${userId}`,{
             headers:{
                 Authorization:`Bearer ${userInfo.token}`
             }

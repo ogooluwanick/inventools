@@ -8,7 +8,7 @@ export const listCustomerActivityData =()=> async (dispatch) => {
     });
 
     try{
-        const {data} = await Axios.get("/api/customerActivityData");
+        const {data} = await Axios.get("https://inventools.herokuapp.com/api/customerActivityData");
         dispatch({type: CUSTOMER_ACTIVITY_DATA_SUCCESS, payload: data});
     }
     catch(error){

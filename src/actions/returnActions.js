@@ -13,7 +13,7 @@ export const listReturns =()=> async (dispatch) => {
     });
 
     try{
-        const {data} = await Axios.get("/api/returns");
+        const {data} = await Axios.get("https://inventools.herokuapp.com/api/returns");
         dispatch({type: RETURN_LIST_SUCCESS, payload: data});
     }
     catch(error){
@@ -28,7 +28,7 @@ export const detailsReturns =(returnsID)=> async (dispatch) => {
     });
 
     try{
-        const {data} = await Axios.get(`/api/returns/${returnsID}`);
+        const {data} = await Axios.get(`https://inventools.herokuapp.com/api/returns/${returnsID}`);
         dispatch({type: RETURN_DETAILS_SUCCESS, payload: data});
     }
     catch(error){

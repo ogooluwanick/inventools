@@ -13,7 +13,7 @@ export const listCustomers =()=> async (dispatch) => {
     });
 
     try{
-        const {data} = await Axios.get("/api/customers");
+        const {data} = await Axios.get("https://inventools.herokuapp.com/api/customers");
         dispatch({type: CUSTOMER_LIST_SUCCESS, payload: data});
     }
     catch(error){
