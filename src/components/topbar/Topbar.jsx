@@ -3,7 +3,7 @@ import "./Topbar.css"
 import {NotificationsNone,ShoppingCartOutlined,Settings,Timeline,ExpandMore} from '@material-ui/icons';
 import Searchbar from './Searchbar';
 import siteData from "./searchData.json"
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { signout } from '../../actions/userActions';
 
@@ -13,6 +13,7 @@ export default function Topbar() {
     const {userInfo}= userSignin;
     const cart=useSelector((state)=> state.cart);
     const {cartItems}= cart;
+    let location = useLocation();
     const dispatch= useDispatch();
     const signOutHandler=()=>{
         dispatch(signout())
@@ -70,15 +71,21 @@ export default function Topbar() {
                             <span className="topIconbadge"> 0 </span>
                         </a>
                     </div>
-                    <div className="topbarIconsContainer">
-                        <Link to="/cart" className='linkDecor'>
-                            <ShoppingCartOutlined/>
-                            <span className="topIconbadge"> {cartItems.length} </span>
-                        </Link>
-                            
-                            
-                       
-                    </div>
+
+
+                    {
+                        !(location.pathname==="/signin")&&
+                        (<div className="topbarIconsContainer">
+                            <Link to="/cart" className='linkDecor'>
+                                <ShoppingCartOutlined/>
+                                <span className="topIconbadge"> {cartItems.length} </span>
+                            </Link>
+                                
+                                
+                        
+                        </div>)
+                        
+                    }
                     <div className="topbarIconsContainer">
                         <a href="https://webprojectdemo-3a4dc.web.app/" className="linkDecor">
                             <Timeline/>

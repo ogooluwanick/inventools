@@ -1,22 +1,29 @@
 .addTransactionPage{
     flex: 4;
-}
-
-.newTransactionTitle{
-    margin-left: 20px;
-}
-
-
-.newTransactionForm{
-    display: flex;
-    flex-direction: space-between;
+    justify-content: center;
     -webkit-box-shadow: 0px 0px 8px -1px #000000; 
     box-shadow: 0px 0px 8px -1px #000000;
     border-radius :05px; 
     margin-left: 20px;
     border-radius: 10px;  
     padding: 20px;
-    margin: 20px;
+    margin: auto;
+    max-width: 45rem;
+    
+}
+
+.newTransactionTitle{
+    margin: auto;
+    margin-left: 30%;
+}
+
+
+.newTransactionForm{
+    display: flex;
+    flex-direction: space-between;
+    justify-content: center;
+   
+   
 }
 .newTransactionFormLeft{
     display: flex;
@@ -95,8 +102,17 @@ color: #555;
     cursor: pointer;
     align-items: center;
     text-align: center;
-    margin-left: 320px;
+    margin:15px auto;
     font-size: 16px;
+}
+
+.newTransactionBtn:hover,.newTransactionBtn:active{
+    
+    background-image: linear-gradient(to right, #2533f5, #4e9eb6, #b13755);
+    background-size: 200%;
+    transition: .5s;
+
+
 }
 
 .newTransactionFormRight{

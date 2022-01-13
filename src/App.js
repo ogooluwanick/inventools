@@ -41,6 +41,7 @@ import UserProfile from './pages/profile/UserProfile';
 import { useSelector } from 'react-redux';
 import Reports from './pages/reports/Reports';
 import Stock from './pages/stock/Stock';
+import OrderList from './pages/placeOrder/OrderList';
 
 
 
@@ -92,6 +93,8 @@ function App() {
                 <Route path="/payment"  element={<PaymentMethod/>}/>
                 <Route path="/place_order"  element={<PlaceOrder/>}/>
                 <Route path="/order/:id"  element={<TrackOrder/>}/>
+                <Route path="/OrderList"  element={<OrderList/>}/> 
+
 
                 <Route path="/NewVendor"  element={<AddVendor/>}/>
 

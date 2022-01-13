@@ -1,6 +1,6 @@
 import React from "react"
 import "./Sidebar.css"
-import { Home,Face,ErrorOutline,  StoreSharp,Receipt,MarkunreadMailbox, MailOutlineSharp,Timeline, Payment, StoreOutlined,WorkOutline,Storefront,ShowChart} from '@material-ui/icons';
+import { Home,Face,ErrorOutline, ShoppingBasket, StoreSharp,Receipt,MarkunreadMailbox, MailOutlineSharp,Timeline, Payment, StoreOutlined,WorkOutline,Storefront,ShowChart} from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -117,6 +117,11 @@ export default function Sidebar() {
                                         <Link to='/ReturnList' className="linkDecor" >
                                             <li className="sidebarListItem">
                                                 <StoreOutlined  className="sideBarIcons"/> Returns
+                                            </li>
+                                        </Link>
+                                        <Link to='/OrderList' className="linkDecor" >
+                                            <li className="sidebarListItem">
+                                                <ShoppingBasket  className="sideBarIcons"/> Orders
                                             </li>
                                         </Link>
                                     </>

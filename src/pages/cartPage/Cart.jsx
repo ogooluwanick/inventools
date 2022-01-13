@@ -1,4 +1,4 @@
-import { Link } from '@material-ui/core'
+import { Link } from 'react-router-dom';
 import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -47,8 +47,8 @@ export default function Cart() {
             <div className="cartDetails">
                 <div className="cartItems">
                     <p>{cartItems.length===0
-                    ?<MessageBox>
-                        Cart is Empty. <Link to="/ProductList" >Go shopping</Link>
+                    ?<MessageBox variant="success">
+                        Cart is Empty. <Link to="/ProductList" id="goShoppingLink" >Go shopping</Link>
                     </MessageBox>
                     :
                     (

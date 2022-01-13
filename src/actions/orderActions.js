@@ -1,7 +1,23 @@
 import  Axios  from "axios";
 import { CART_EMPTY } from "../constants/cartConstants";
-import { ORDER_CREATE_FAIL, ORDER_CREATE_REQUEST, ORDER_CREATE_SUCCESS, ORDER_DETAILS_REQUEST, ORDER_DETAILS_SUCCESS } from "../constants/orderConstants";
+import { ORDER_CREATE_FAIL, ORDER_CREATE_REQUEST, ORDER_CREATE_SUCCESS, ORDER_DETAILS_REQUEST, ORDER_DETAILS_SUCCESS, ORDER_LIST_FAIL, ORDER_LIST_REQUEST, ORDER_LIST_SUCCESS } from "../constants/orderConstants";
 
+
+export const listOrders=()=> async (dispatch) => {
+    dispatch({
+        type: ORDER_LIST_REQUEST
+    });
+
+    try{
+        
+        const {data} = await Axios.get("https://inventools.herokuapp.com/api/orders/display");
+        dispatch({type: ORDER_LIST_SUCCESS, payload: data});
+    }
+    catch(error){
+        dispatch({type: ORDER_LIST_FAIL, payload: error.message  })
+
+    }
+};
 
 
 export const createOrder =(order)=> async (dispatch,getState) => {

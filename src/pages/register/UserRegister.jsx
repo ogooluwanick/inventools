@@ -84,7 +84,7 @@ export const UserRegister = () => {
                             </div>
                             <div style={{margin:'-15px'}}>
                                 <label htmlFor=""/>
-                                <button className="checkoutBtn"> <div style={{fontSize: '15px',padding:"5px", margin:'-15px'}}>Register</div>   </button>
+                                <button className="checkoutBtn" id='majorBtnHoverStyle'> <div style={{fontSize: '15px',padding:"5px", margin:'-15px'}}>Register</div>   </button>
                             </div>
                             <div>
                                 <label htmlFor=""></label>

@@ -6,9 +6,10 @@ import {customerRows} from "../customerPage/customerData"
 export default function AddTransaction() {
     return (
         <div className="addTransactionPage">
-            <h1 className="newTransactionTitle">New Transaction</h1>
+             <div> <h1 className="newTransactionTitle">New Transaction</h1></div>
 
             <form action="#" className="newTransactionForm">
+               
                 <div className="newTransactionFormLeft">
                     <div className="transactionItem">
                         <label htmlFor="">Customer ID</label>
@@ -44,7 +45,7 @@ export default function AddTransaction() {
                         <input  type="number"  placeholder="Value..."/>
                     </div>
                     
-                    <button className="newTransactionBtn">Create</button>
+                    <button className="newTransactionBtn" id='majorBtnHoverStyle'>Create</button>
                 </div>
                 
             </form>

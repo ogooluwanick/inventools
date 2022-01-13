@@ -1,0 +1,167 @@
+.productListPage{
+    flex: 4;
+}
+
+.productlistInfo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.productlistImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.productListEditBtn{
+    border:none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: snow;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.productListEditBtn:active,.productListEditBtn:hover{
+    background-image: linear-gradient(to right, #074929, #7ca792, #c5f5de);
+	background-size: 200%;
+    transition: .5s;
+
+}
+
+
+
+.productListCartBtn{
+    height: 27px;
+    width: 60px;
+    border:none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #2ea4e5;
+    color: snow;
+    cursor: pointer;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.productListCartBtn:active,.productListCartBtn:hover{
+    background-image: linear-gradient(to right, #2533f5, #8589bb, #4c5088);
+	background-size: 200%;
+    transition: .5s;
+
+}
+
+.productListDeleteIcon{
+    cursor: pointer;
+    color: crimson;
+
+}
+
+.productListDeleteIcon:active,.productListDeleteIcon:hover{
+    color: rgb(236, 152, 168);
+    transition: .5s;
+
+}
+
+
+
+
+
+
+.productListHeaderControls{
+    width: 100%;
+    height: 50px;
+    background-color: #fbfbff;
+    position: static;
+    top: 0;
+    z-index: 9999;
+    padding: 5px;
+}
+
+.productListHeaderWrap{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.productListHeaderAddIcon{
+    position: relative;
+      cursor: pointer; 
+       margin-right: 8px;
+       color: snow; 
+}
+
+.productListHeaderLeft{
+    font-weight: 600;
+    font-size: 32px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+.productListHeaderAddBtn{
+    height: 35px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: #2ea4e5;
+    color: snow;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.productListHeaderAddBtn:hover,.productListHeaderAddBtn:active{
+    
+        background-image: linear-gradient(to right, #2533f5, #4e9eb6, #b13755);
+        background-size: 200%;
+        transition: .5s;
+    
+    
+}
+
+.productListHeaderAddIcon{
+    font-size: 16px !important;
+    margin-right: 5px;
+    
+}
+.productListLinks:hover{
+    text-decoration: none;
+}
+
+.productlistStatusTextColor.Unavailable,.productlistStatusTextColor.false{
+    color: #f50057;
+
+
+}
+
+
+.productlistStatusTextColor.Available,.productlistStatusTextColor.true{
+    color: green;
+
+
+}
+
+
+.productListCartActivities{
+    display: flex;
+    align-items: center;
+}

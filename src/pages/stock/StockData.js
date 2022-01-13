@@ -63,6 +63,9 @@ class  StockData extends Component {
 
     render(){
         const {loading}=this.state
+        console.log("State:",this.state)
+
+        
     return (
         <div className='stockMainBody'>
             <h1 className='reportHeader'>Stock Market</h1>

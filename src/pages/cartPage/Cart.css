@@ -111,3 +111,19 @@ ul {
 
 
 }
+
+#goShoppingLink{
+    cursor: pointer;
+    
+}
+#goShoppingLink:active,#goShoppingLink:hover{
+   
+    cursor: pointer;
+    color: inherit;
+    
+}
+
+
+#MessageboxgoShoppingLink{
+    background-color: #fff;
+}
