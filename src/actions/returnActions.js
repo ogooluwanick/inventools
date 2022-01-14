@@ -47,7 +47,7 @@ export const detailsReturns =(returnsID)=> async (dispatch) => {
 export const createReturn=(id,date,transactionID,customer_NAME,STATUS,RECEIVE_STATUS,REFUND_STATUS,AMOUNT_REFUNDED)=> async(dispatch)=>{
     dispatch ({type:RETURN_CREATE_REQUEST, payload:{id,date,transactionID,customer_NAME,STATUS,RECEIVE_STATUS,REFUND_STATUS,AMOUNT_REFUNDED}})
     try {
-        const {data}= await Axios.post("/api/returns/newReturn",{id,date,transactionID,customer_NAME,STATUS,RECEIVE_STATUS,REFUND_STATUS,AMOUNT_REFUNDED})
+        const {data}= await Axios.post("https://inventools.herokuapp.com/api/returns/newReturn",{id,date,transactionID,customer_NAME,STATUS,RECEIVE_STATUS,REFUND_STATUS,AMOUNT_REFUNDED})
         dispatch({type:RETURN_CREATE_SUCCESS, payload: data})
     
 
