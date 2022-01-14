@@ -109,7 +109,7 @@ export default function Topbar() {
                                 </Link>
                                 <ul className="dropDownContent">
                                     <li ><Link to="/profile" className='topbarLink'>{userInfo.username}</Link></li>
-                                    <li><Link to="/" className='topbarLink'>Order History</Link></li>
+                                    <li><Link to="/orderlist" className='topbarLink'>Order History</Link></li>
                                     <li><Link to="/"  className='topbarLink' onClick={signOutHandler}>Sign Out</Link></li>
                                 </ul>
                             </div>
@@ -130,7 +130,7 @@ export default function Topbar() {
                                     <ExpandMore id='ExpandMore'  style={{marginLeft:"-5px"}}/>
                                 </Link>
                                 <ul className="dropDownContent" style={{marginTop:"0px"}}>
-                                    <li ><Link to="/dashboard" className='topbarLink'>Dashboard</Link></li>
+                                    <li ><Link to="/userList" className='topbarLink'>Users</Link></li>
                                     <li><Link to="/productlist" className='topbarLink'>Products</Link></li>
                                     <li><Link to="/orderlist" className='topbarLink'>Orders</Link></li>
                                     <li><Link to="/"  className='topbarLink' onClick={signOutHandler}>Sign Out</Link></li>

@@ -1,6 +1,6 @@
 [
     {
-      "link": "/",
+      "link": "/home",
       "title": "Home"
     },
     {
@@ -26,5 +26,25 @@
     {
       "link": "/NewTransaction",
       "title": "Create New Transaction"
+    },
+    {
+      "link": "/Stock",
+      "title": "Stocks"
+    },
+    {
+      "link": "/UserList",
+      "title": "Users List/Table"
+    },
+    {
+      "link": "/payment",
+      "title": "Payment Page"
+    },
+    {
+      "link": "/OrderList",
+      "title": "Order List/Table"
+    },
+    {
+      "link": "/NewVendor",
+      "title": "Products List/Table"
     }
   ]

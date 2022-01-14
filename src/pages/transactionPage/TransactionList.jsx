@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./TransactionList.css"
 import { Link } from 'react-router-dom'
 import {DataGrid} from '@material-ui/data-grid';
-import {DeleteRounded,AddCircleOutlineSharp} from '@material-ui/icons';
+import {DeleteRounded} from '@material-ui/icons';
 import LoadingBox from '../../components/loadingbox/LoadingBox';
 import MessageBox from '../../components/messagebox/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
@@ -135,14 +135,7 @@ export default function TransactionList() {
                                         All Transaction
                                     </div>
 
-                                    <div className="transactionListHeaderRight">
-                                        <Link to="/NewTransaction" className="transactionListLinks">
-                                            <button  className="transactionListHeaderAddBtn">
-                                                <AddCircleOutlineSharp className="transactionListHeaderAddIcon"/>
-                                                New 
-                                            </button>
-                                        </Link>
-                                    </div>
+                                   
                                 </div> 
                             </div>
 

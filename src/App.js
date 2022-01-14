@@ -15,7 +15,6 @@ import AddProduct from "./pages/productPage/AddProduct"
 
 import TransactionList from "./pages/transactionPage/TransactionList"
 import Transaction from './pages/transactionPage/Transaction';
-import AddTransaction from "./pages/transactionPage/AddTransaction"
 
 import VendorList from './pages/vendorPage/VendorList';
 import Vendor from './pages/vendorPage/Vendor';
@@ -42,6 +41,7 @@ import { useSelector } from 'react-redux';
 import Reports from './pages/reports/Reports';
 import Stock from './pages/stock/Stock';
 import OrderList from './pages/placeOrder/OrderList';
+import UserList from './pages/AdminUserView/UserList';
 
 
 
@@ -73,7 +73,18 @@ function App() {
           <Route path="/signin/shipping_address"  element={<ShippingAddress/>}/>
           
           <Route path='/Stock' element={<Stock/>}/>  
-          <Route path='/Stock/:StockID' element={<Stock/>}/>        
+          <Route path='/Stock/:StockID' element={<Stock/>}/>       
+
+
+          {
+            userInfo && userInfo.isAdmin &&(
+              <>              
+                <Route path='/UserList' element={<UserList/>}/>   
+                <Route path="/register"  element={<UserRegister/>}/>
+              </>
+            )
+          }    
+           
           
           {
             userInfo &&
@@ -88,7 +99,6 @@ function App() {
 
                 <Route path="/TransactionList"  element={<TransactionList/>}/> 
                 <Route path="/Transaction/:TransactionId"  element={<Transaction/>}/>
-                <Route path="/NewTransaction"  element={<AddTransaction/>}/>
 
                 <Route path="/payment"  element={<PaymentMethod/>}/>
                 <Route path="/place_order"  element={<PlaceOrder/>}/>

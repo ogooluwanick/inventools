@@ -1,5 +1,22 @@
 import Axios  from "axios";
-import { USER_DETAILS_FAIL, USER_DETAILS_REQUEST, USER_DETAILS_SUCCESS, USER_REGISTER_FAIL, USER_REGISTER_REQUEST, USER_REGISTER_SUCCESS, USER_SIGNIN_FAIL, USER_SIGNIN_REQUEST, USER_SIGNIN_SUCCESS, USER_SIGNOUT } from "../constants/userConstants"
+import { USER_DETAILS_FAIL, USER_DETAILS_REQUEST, USER_DETAILS_SUCCESS, USER_LIST_FAIL, USER_LIST_REQUEST, USER_LIST_SUCCESS, USER_REGISTER_FAIL, USER_REGISTER_REQUEST, USER_REGISTER_SUCCESS, USER_SIGNIN_FAIL, USER_SIGNIN_REQUEST, USER_SIGNIN_SUCCESS, USER_SIGNOUT } from "../constants/userConstants"
+
+
+export const listUsers=()=> async (dispatch) => {
+    dispatch({
+        type: USER_LIST_REQUEST
+    });
+
+    try{
+        
+        const {data} = await Axios.get("https://inventools.herokuapp.com/api/users/display");
+        dispatch({type: USER_LIST_SUCCESS, payload: data});
+    }
+    catch(error){
+        dispatch({type: USER_LIST_FAIL, payload: error.message  })
+
+    }
+};
 
 export const siginin=(email,passWord)=> async(dispatch)=>{
     dispatch ({type:USER_SIGNIN_REQUEST, payload:{email,passWord}})

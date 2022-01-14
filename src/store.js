@@ -2,12 +2,12 @@ import {applyMiddleware, createStore, compose, combineReducers} from "redux";
 import thunk from "redux-thunk";
 import { customerActivityDataReducer } from "./reducers/customerActivityDataReducers";
 import { customerCreateReducer, customerDetailsReducer, customerListReducer } from "./reducers/customerReducers";
-import { vendorDetailsReducer, vendorListReducer } from "./reducers/vendorReducers";
+import { vendorCreateReducer, vendorDetailsReducer, vendorListReducer } from "./reducers/vendorReducers";
 import {  productCreateReducer, productDetailsReducer, productListReducer } from "./reducers/productReducers";
 import {transactionDetailsReducer, transactionListReducer} from "./reducers/transactionReducers"
-import { returnDetailsReducer, returnListReducer } from "./reducers/returnReducers";
+import { returnCreateReducer, returnDetailsReducer, returnListReducer } from "./reducers/returnReducers";
 import { cartReducer } from "./reducers/cartReducers";
-import { userDetailsReducer, userRegisterReducer, userSigninReducer } from "./reducers/userReducers";
+import { userDetailsReducer, userListReducer, userRegisterReducer, userSigninReducer } from "./reducers/userReducers";
 import { orderCreatedReducer, orderDetailsReducer, orderListReducer } from "./reducers/orderReducers";
 
 
@@ -39,13 +39,16 @@ const reducer= combineReducers({
     transactionDetails:  transactionDetailsReducer,
     vendorList: vendorListReducer,
     vendorDetails:  vendorDetailsReducer,
+    vendorCreate:vendorCreateReducer,
     returnList: returnListReducer,
     returnDetails:  returnDetailsReducer,
+    returnCreate:returnCreateReducer,
     customerActivityDataList:customerActivityDataReducer,
     cart :cartReducer,
     userSignin: userSigninReducer,
     userRegister:userRegisterReducer,
     userDetails:userDetailsReducer,
+    userList:userListReducer,
     orderCreate:orderCreatedReducer,
     orderDetails:orderDetailsReducer,
     orderList:orderListReducer,

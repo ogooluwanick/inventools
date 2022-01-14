@@ -36,7 +36,9 @@ export default function AddProduct() {
         {
             dispatch(createProduct(product_name,STOCK,CATEGORY,PRICE))
             alert("Product Created") 
+            if (productInfo){
             nav("/ProductList")
+        }
         }
     }
 

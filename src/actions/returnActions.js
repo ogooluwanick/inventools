@@ -1,5 +1,8 @@
 import  Axios  from "axios";
 import { 
+    RETURN_CREATE_FAIL,
+    RETURN_CREATE_REQUEST,
+    RETURN_CREATE_SUCCESS,
     RETURN_DETAILS_FAIL,
     RETURN_DETAILS_REQUEST,
     RETURN_DETAILS_SUCCESS,
@@ -40,5 +43,22 @@ export const detailsReturns =(returnsID)=> async (dispatch) => {
       })
     }
 }
+
+export const createReturn=(id,date,transactionID,customer_NAME,STATUS,RECEIVE_STATUS,REFUND_STATUS,AMOUNT_REFUNDED)=> async(dispatch)=>{
+    dispatch ({type:RETURN_CREATE_REQUEST, payload:{id,date,transactionID,customer_NAME,STATUS,RECEIVE_STATUS,REFUND_STATUS,AMOUNT_REFUNDED}})
+    try {
+        const {data}= await Axios.post("/api/returns/newReturn",{id,date,transactionID,customer_NAME,STATUS,RECEIVE_STATUS,REFUND_STATUS,AMOUNT_REFUNDED})
+        dispatch({type:RETURN_CREATE_SUCCESS, payload: data})
+    
+
+        localStorage.setItem("returnInfo",JSON.stringify(data))
+    }
+    catch(error){
+        dispatch({type:RETURN_CREATE_FAIL,
+            payload: error.response && error.response.data.message 
+            ? error.response.data.message 
+            : error.message, })
+    }
+};
 
 

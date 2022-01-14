@@ -1,5 +1,14 @@
 .AddVendor{
     flex: 4;
+    -webkit-box-shadow: 0px 0px 8px -1px #000000; 
+    box-shadow: 0px 0px 8px -1px #000000;
+    border-radius :05px; 
+    margin-left: 20px;
+    border-radius: 10px;  
+    padding: 20px;
+    max-width: 60rem;
+    margin: 10px auto;
+    max-height: 30rem;
 }
 
 .newVendorForm{
@@ -26,6 +35,12 @@
     height: 20px;
     padding: 10px;
     border: 1px solid rgb(128, 125, 125);
+    border-radius: 5px;
+
+}
+
+.newTransactionSelect{
+    height: 40px;
     border-radius: 5px;
 }
 
@@ -54,11 +69,21 @@ color: #555;
     background-color: #2ea4e5;
     padding: 7px 10px;
     border-radius: 10px;
-    margin-top: 30px;
     cursor: pointer;
-    align-items: center;
     text-align: center;
-    margin-left: 320px;
     font-size: 16px;
+    margin:  auto;
+    margin-left:-6rem;
+    margin-top: 5rem;
+   
 }
 
+
+.newVendorBtn:hover,.newVendorBtn:active{
+    
+    background-image: linear-gradient(to right, #2533f5, #4e9eb6, #b13755);
+    background-size: 200%;
+    transition: .5s;
+
+
+}

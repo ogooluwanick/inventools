@@ -34,7 +34,7 @@ export default function VendorList() {
     }
 
     const columns = [
-        { field: 'id', headerName: 'ID', width: 100 },
+        { field: '_id', headerName: 'ID', width: 100 },
         {
           field: 'company_USERNAME',
           headerName: 'COMPANY NAME',

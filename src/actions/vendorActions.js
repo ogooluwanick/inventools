@@ -1,5 +1,8 @@
 import  Axios  from "axios";
 import { 
+    VENDOR_CREATE_FAIL,
+    VENDOR_CREATE_REQUEST,
+    VENDOR_CREATE_SUCCESS,
     VENDOR_DETAILS_FAIL,
     VENDOR_DETAILS_REQUEST,
     VENDOR_DETAILS_SUCCESS,
@@ -40,5 +43,23 @@ export const detailsVendors =(vendorsID)=> async (dispatch) => {
       })
     }
 }
+
+
+export const createVendor=(id,Primary_Contact,company_NAME,company_EMAIL,phone_No,Website,Shipping_Address,BILLING_Address,STATUS)=> async(dispatch)=>{
+    dispatch ({type:VENDOR_CREATE_REQUEST, payload:{id,Primary_Contact,company_NAME,company_EMAIL,phone_No,Website,Shipping_Address,BILLING_Address,STATUS}})
+    try {
+        const {data}= await Axios.post("https://inventools.herokuapp.com/api/vendors/newVendor",{id ,Primary_Contact,company_NAME,company_EMAIL,phone_No,Website,Shipping_Address,BILLING_Address,STATUS})
+        dispatch({type:VENDOR_CREATE_SUCCESS, payload: data})
+    
+
+        localStorage.setItem("vendorInfo",JSON.stringify(data))
+    }
+    catch(error){
+        dispatch({type:VENDOR_CREATE_FAIL,
+            payload: error.response && error.response.data.message 
+            ? error.response.data.message 
+            : error.message, })
+    }
+};
 
 

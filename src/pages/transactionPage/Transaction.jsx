@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import "./Transaction.css"
-import { Link } from 'react-router-dom'
 import {PersonOutlineTwoTone,EventTwoTone,LocationOnTwoTone,FingerprintTwoTone,BackupTwoTone,EuroSymbolTwoTone} from '@material-ui/icons';
 import {customerRows} from "../customerPage/customerData"
 import { useDispatch, useSelector } from 'react-redux';
@@ -41,9 +40,7 @@ export default function Transaction() {
                 <div className="transactionPage">
                     <div className="transactionTitleContainer">
                         <h1 className="transactionTitle">Edit Transaction</h1>
-                        <Link to="/NewTransaction">
-                            <button className="transactionAddBtn" onClick>Create</button>
-                        </Link>
+                        
                     </div>
 
                     <div className="transactionContainer">
