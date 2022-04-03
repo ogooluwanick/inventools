@@ -10,7 +10,7 @@ import { signout } from '../../actions/userActions';
 
 export default function Topbar() {
     const userSignin=useSelector((state)=> state.userSignin);
-    const { }= userSignin;
+    const { userInfo}= userSignin;
     const cart=useSelector((state)=> state.cart);
     const {cartItems}= cart;
     let location = useLocation();
